@@ -6,11 +6,11 @@ Authors: Mario Càllisto
 import Mathlib
 
 /-!
-# The crystallographic exclusion behind Theorem 6.5
+# The crystallographic exclusion behind Theorem 6.7
 
-Lemma 6.4 of the paper classifies the sublattices of the triangular lattice `ℤ[ω]` invariant
+Lemma 6.6 of the paper classifies the sublattices of the triangular lattice `ℤ[ω]` invariant
 under the full point group `D₆`: such a sublattice is an ideal `(α)` with `(α) = (ᾱ)`, and
-its index is `3^e n²`. The counting step of Theorem 6.5 pins the translation lattice of a
+its index is `3^e n²`. The counting step of Theorem 6.7 pins the translation lattice of a
 hypothetical uniformity-≤ 4 member of `U(3².6²)` to index `39` or `63`; neither is of that
 form, so no such tiling exists.
 
@@ -20,7 +20,7 @@ while a norm of the classified shape carries every prime other than `3` to an ev
 The general form below says it with the square dividing directly, which avoids invoking the
 factorisation of `ℤ[ω]` and is what the two applications need.
 
-The ideal-theoretic half of Lemma 6.4 — that `D₆`-invariance makes the sublattice a
+The ideal-theoretic half of Lemma 6.6 — that `D₆`-invariance makes the sublattice a
 conjugation-stable ideal of `ℤ[ω]`, whose norm therefore has this shape — is not formalised;
 see the README.
 

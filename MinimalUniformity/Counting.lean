@@ -6,14 +6,14 @@ Authors: Mario Càllisto
 import MinimalUniformity.Lattice
 
 /-!
-# The counting arguments of Theorems 6.5 and 7.2
+# The counting arguments of Theorems 6.7 and 7.2
 
 Both lower bounds for `(3².6²)` end in a chain of per-period counts. These are the steps
 where a hand computation is least safe and a machine is most useful: each is a small linear
 system over the tile, vertex and edge counts of a torus quotient, and the conclusion is
 extracted by cancellation.
 
-* Theorem 6.5(v), the simple category. With `t` triangles, `n₀` species vertices and `nA`,
+* Theorem 6.7(v), the simple category. With `t` triangles, `n₀` species vertices and `nA`,
   `nB` vertices of the tip and notch classes per translation cell, counting triangle corners
   by vertex type gives `nA = 2 nB`; the stabiliser count then pins the tile's period to
   `3` or `6`, and the hexagon-corner count forces `g = 12`, so the translation lattice has
@@ -25,15 +25,15 @@ extracted by cancellation.
 
 ## Main results
 
-* `MinimalUniformity.tips_eq_two_mul_notches`: `nA = 2 nB` (Theorem 6.5(v)).
-* `MinimalUniformity.period_eq_three_or_six`: `p ∈ {3, 6}` (Theorem 6.5(v)).
+* `MinimalUniformity.tips_eq_two_mul_notches`: `nA = 2 nB` (Theorem 6.7(v)).
+* `MinimalUniformity.period_eq_three_or_six`: `p ∈ {3, 6}` (Theorem 6.7(v)).
 * `MinimalUniformity.no_species_vertex`: `n₁ = 0` and `h = r` (Theorem 7.2).
 * `MinimalUniformity.no_invariant_lattice`: the two surviving cells are not `D₆`-invariant.
 -/
 
 namespace MinimalUniformity
 
-/-- **Theorem 6.5(v), the triangle-corner count.**
+/-- **Theorem 6.7(v), the triangle-corner count.**
 
 Every notch is species-apexed and every triangle lies in exactly one notch, so `t = 2 nB`
 and `n₀ = nB`; counting the three corners of every triangle by the type of the vertex they
@@ -43,7 +43,7 @@ theorem tips_eq_two_mul_notches {t n₀ nA nB : ℕ}
     (hcorners : 3 * t = 2 * n₀ + nA + 2 * nB) :
     nA = 2 * nB := by omega
 
-/-- **Theorem 6.5(v), the period.**
+/-- **Theorem 6.7(v), the period.**
 
 A hugged corner carries at most the mirror through it, so its class has `| Stab G P | / sE`
 vertices for the `m = 3p - 6` letters `E`, with `| Stab G P | / sE` either `2p` or `p`.
@@ -71,13 +71,13 @@ theorem no_species_vertex {t h r H n₁ n₂ n₃ : ℕ}
     (hends : 2 * H = n₁ + n₂) :
     n₁ = 0 ∧ h = r := by omega
 
-/-- **The end of Theorem 6.5.**
+/-- **The end of Theorem 6.7.**
 
 Every lattice point of a cell is a vertex, a hexagon centre, or interior to a copy of the
 irregular tile, so the index of the translation lattice is `V + h + i · I(P)`. Pick's theorem
 on the triangular lattice gives `I = 1` for the hexagram (area `12`, `B = 12`) and `I = 19`
 for the 30-gon (area `66`, `B = 30`), so the index is `39` or `63`. Neither is of the form
-`3^e n²`, so by Lemma 6.4 no such translation lattice exists, and no such tiling either. -/
+`3^e n²`, so by Lemma 6.6 no such translation lattice exists, and no such tiling either. -/
 theorem no_invariant_lattice (e n : ℕ) :
     3 ^ e * n ^ 2 ≠ 30 + 7 + 2 * 1 ∧ 3 ^ e * n ^ 2 ≠ 36 + 8 + 1 * 19 :=
   ⟨by simpa using ne_thirtyNine e n, by simpa using ne_sixtyThree e n⟩

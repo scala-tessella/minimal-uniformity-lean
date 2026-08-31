@@ -26,8 +26,8 @@ convex unit-edge polygons*.
 | `MinimalUniformity/Rigidity.lean` | exact angle sums and **Theorem 2.7(1)**, the forced irregular corner |
 | `MinimalUniformity/ChamberBound.lean` | **Lemma 3.1**, the `2k\|z\|` chamber bound, with the `6k` and `8k` readings |
 | `MinimalUniformity/CornerOrbits.lean` | **Lemma 2.9**, corner orbits of an irregular tile |
-| `MinimalUniformity/Lattice.lean` | the arithmetic closing **Theorem 6.5**: `39` and `63` are not indices of a `D₆`-invariant sublattice |
-| `MinimalUniformity/Counting.lean` | the per-period counts of **Theorem 6.5(v)** and **Theorem 7.2** |
+| `MinimalUniformity/Lattice.lean` | the arithmetic closing **Theorem 6.7**: `39` and `63` are not indices of a `D₆`-invariant sublattice |
+| `MinimalUniformity/Counting.lean` | the per-period counts of **Theorem 6.7(v)** and **Theorem 7.2** |
 | `MinimalUniformity/Examples.lean` | the arc and closure examples of the paper, checked by evaluation |
 
 Everything is `sorry`-free and `native_decide`-free: each result depends only on `propext`,
@@ -63,7 +63,7 @@ theorem no_species_vertex {t h r H n₁ n₂ n₃ : ℕ}
     (hhexEdges : 6 * h = t + 2 * r + 2 * H) (hends : 2 * H = n₁ + n₂) :
     n₁ = 0 ∧ h = r
 
--- Theorem 6.5: neither surviving cell can carry a D₆-invariant translation lattice
+-- Theorem 6.7: neither surviving cell can carry a D₆-invariant translation lattice
 theorem no_invariant_lattice (e n : ℕ) :
     3 ^ e * n ^ 2 ≠ 30 + 7 + 2 * 1 ∧ 3 ^ e * n ^ 2 ≠ 36 + 8 + 1 * 19
 ```
@@ -76,7 +76,7 @@ as hypotheses — the same division of labour as its sibling repository. Specifi
 - **The symbol enumerations** (Theorems 3.2 and 6.1, and every catalogue scan). These are
   DRAT-certified or cross-validated in the artifact; re-deriving them in Lean would need
   `native_decide` and would replace a machine-checkable certificate with a weaker one.
-- **The ideal-theoretic half of Lemma 6.4** — that `D₆`-invariance makes a sublattice of
+- **The ideal-theoretic half of Lemma 6.6** — that `D₆`-invariance makes a sublattice of
   `ℤ[ω]` a conjugation-stable ideal, whose norm is therefore `3^e n²`. `Lattice.lean`
   formalizes the exclusion that consumes it, in a form (`p ∣ N`, `p² ∤ N`, `p ∤ 3`) that
   needs no factorisation of `ℤ[ω]`.
