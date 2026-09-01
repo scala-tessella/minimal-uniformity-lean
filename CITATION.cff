@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+message: >-
+  If you cite this formalization, please cite the specific archived version you checked, not
+  the repository in general. Each release has its own version DOI; see the "Archival" section
+  in README.md.
+title: >-
+  minimal-uniformity-lean: Lean 4 formalization of the pen-and-paper core of "Minimal
+  uniformity of the non-Archimedean vertex types in unit-edge tilings"
+abstract: >-
+  A Lean 4 / Mathlib formalization of the human-checked mathematics that sharpens the
+  exhaustive scans behind the paper's lower bounds: the chamber bound, the rigidity of the
+  class and its forced irregular corner, the corner-orbit lemma, the permanence of word
+  violations under refinement, and the lattice and Euler counts that close the (3^2.6^2) case
+  in both categories. The scans themselves are certificate-backed elsewhere and are not the
+  target here. Every result is sorry-free and native_decide-free, depending at most on
+  propext, Classical.choice and Quot.sound; the corner-orbit lemmas depend on no axioms at
+  all. The toolchain is pinned by lean-toolchain and lake-manifest.json, so lake exe cache get
+  && lake build reproduces the checked build.
+type: software
+authors:
+  - given-names: Mario
+    family-names: Càllisto
+    orcid: https://orcid.org/0009-0009-1215-3278
+    email: mario.callisto@gmail.com
+    alias: mcallisto
+license: Apache-2.0
+repository-code: https://github.com/scala-tessella/minimal-uniformity-lean
+url: https://github.com/scala-tessella/minimal-uniformity-lean
+version: 0.1.1
+date-released: '2026-09-02'
+# Version DOI of this release — the one to cite. Zenodo mints it when the release is published, so
+# it cannot be present in the tree that release archives; the version DOI, and the concept DOI that
+# comes with the first deposit, are recorded here in the first commit after the tag.
+keywords:
+  - tilings
+  - tessellations
+  - unit-edge polygons
+  - minimal uniformity
+  - Lean 4
+  - Mathlib
+  - formal verification
+  - proof assistant
+references:
+  - type: software
+    title: >-
+      minimal-uniformity-three: machine-checked companion to "Minimal uniformity of the
+      non-Archimedean vertex types in unit-edge tilings"
+    abstract: >-
+      The computational verification artifact for the same paper, of which this formalization
+      is the deliberately separate pen-and-paper counterpart.
+    authors:
+      - given-names: Mario
+        family-names: Càllisto
+        orcid: https://orcid.org/0009-0009-1215-3278
+    version: 0.2.0
+    doi: 10.5281/zenodo.22238750
+    repository-code: https://github.com/scala-tessella/minimal-uniformity-three
+    license: Apache-2.0
+  - type: software
+    title: mathlib
+    abstract: The Lean mathematical library, pinned by lake-manifest.json.
+    authors:
+      - name: The mathlib Community
+    repository-code: https://github.com/leanprover-community/mathlib4
+    license: Apache-2.0
