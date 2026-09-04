@@ -106,7 +106,7 @@ whatever is newest:
 
 | Version | DOI |
 |---|---|
-| 0.1.2 | *(minted on release; recorded here in the first commit after the tag)* |
+| 0.1.2 | [10.5281/zenodo.22307540](https://doi.org/10.5281/zenodo.22307540) |
 | 0.1.1 | [10.5281/zenodo.22239308](https://doi.org/10.5281/zenodo.22239308) |
 
 Zenodo assigns a release's version DOI at the moment that release is published, so it cannot be
