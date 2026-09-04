@@ -26,12 +26,11 @@ authors:
 license: Apache-2.0
 repository-code: https://github.com/scala-tessella/minimal-uniformity-lean
 url: https://github.com/scala-tessella/minimal-uniformity-lean
-version: 0.1.1
-date-released: '2026-09-02'
+version: 0.1.2
+date-released: '2026-09-04'
 # Version DOI of this release — the one to cite. Zenodo mints it when the release is published, so
 # it cannot be present in the tree that release archives; the version DOI, and the concept DOI that
 # comes with the first deposit, are recorded here in the first commit after the tag.
-doi: 10.5281/zenodo.22239308
 keywords:
   - tilings
   - tessellations

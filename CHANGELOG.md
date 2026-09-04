@@ -6,6 +6,18 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). A r
 Zenodo when its GitHub release is published, and it is the archived release — not this branch — that a
 citation must name; the DOIs are in the README's archival section.
 
+## [0.1.2] — 2026-09-04
+
+**The numbering follows the manuscript.** No mathematics changed: every statement, proof and axiom
+footprint is the one 0.1.0 carried. Section 6 of the paper was reordered before submission, and the
+docstrings and README of 0.1.1 still named the results by their earlier numbers.
+
+### Changed
+
+- `Lattice.lean`, `Counting.lean` and the README now cite the paper's Lemma 6.6 (was 6.4) and
+  Theorem 6.7 (was 6.5); Theorem 7.2 and the lemmas of Sections 2 and 3 were unaffected.
+- The README's archival table records the version DOI of 0.1.1 and the concept DOI.
+
 ## [0.1.1] — 2026-09-02
 
 **The archivable release.** No mathematics changed: every statement, proof and axiom footprint is the
