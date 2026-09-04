@@ -100,11 +100,13 @@ Mathlib revision, so the build a reader reproduces is the build that was checked
 ## Archival
 
 Deposited on Zenodo as a supplement to the paper record. **Cite the version DOI of the release you
-checked**, not the all-versions concept DOI — the latter always resolves to whatever is newest:
+checked**, not the all-versions concept DOI
+[10.5281/zenodo.22239307](https://doi.org/10.5281/zenodo.22239307) — the latter always resolves to
+whatever is newest:
 
 | Version | DOI |
 |---|---|
-| 0.1.1 | *(minted on release; recorded here in the first commit after the tag)* |
+| 0.1.1 | [10.5281/zenodo.22239308](https://doi.org/10.5281/zenodo.22239308) |
 
 Zenodo assigns a release's version DOI at the moment that release is published, so it cannot be
 present in the tree that release archives: the `CITATION.cff` inside a deposit carries no version
